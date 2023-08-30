@@ -1,0 +1,11 @@
+LABORATORIO 2 ARSW 2023-2
+
+JOHAN SEBASTIAN GARCIA MARTINEZ
+
+PRIMER PUNTO
+
+- Descargar el proyecto PrimeFinder
+
+	Debemos ir al link del proyecto y copiarlo para luego con el comando git clone añadirlo al directorio
+
+- Modificar el proyecto para que cada t milisegundos el programa espere a que el usuario presione enter para continuar con el proceso
