@@ -13,7 +13,7 @@ import java.util.Scanner;
 public class Control extends Thread {
     
     private final static int NTHREADS = 10;
-    private final static int MAXVALUE = 5000000;
+    private final static int MAXVALUE = 50000;
     private final static int TMILISECONDS = 2000;
 
     private final int NDATA = MAXVALUE / NTHREADS;
