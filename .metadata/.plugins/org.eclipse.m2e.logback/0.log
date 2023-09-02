@@ -1,58 +1,19 @@
-2023-09-01 19:44:30,302 [Worker-8: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
-2023-09-01 19:45:32,167 [Worker-14: Updating Maven Dependencies] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: arsw:PrimeFinder:1.0-SNAPSHOT @ C:\Users\johan\Desktop\wait-notify-excercise\pom.xml.
-2023-09-01 19:45:33,035 [Worker-6: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2023-09-01 19:45:33,036 [Worker-6: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\johan\Desktop\wait-notify-excercise\src\main\resources
-2023-09-01 19:45:33,040 [Worker-6: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2023-09-01 19:45:33,040 [Worker-6: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\johan\Desktop\wait-notify-excercise\src\test\resources
-2023-09-01 19:45:55,417 [Worker-8: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2023-09-01 19:45:55,418 [Worker-8: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\johan\Desktop\wait-notify-excercise\src\main\resources
-2023-09-01 19:45:55,420 [Worker-8: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2023-09-01 19:45:55,420 [Worker-8: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\johan\Desktop\wait-notify-excercise\src\test\resources
-2023-09-01 19:46:01,120 [Worker-9: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2023-09-01 19:46:01,120 [Worker-9: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\johan\Desktop\wait-notify-excercise\src\main\resources
-2023-09-01 19:46:01,122 [Worker-9: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2023-09-01 19:46:01,122 [Worker-9: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\johan\Desktop\wait-notify-excercise\src\test\resources
-2023-09-01 23:05:14,449 [Worker-6: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
-2023-09-01 23:05:43,510 [Worker-2: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
-2023-09-01 23:07:27,414 [Worker-1: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
-2023-09-01 23:07:33,770 [Worker-11: Deferred Early Start] INFO  o.a.h.c.h.i.c.HttpRequestRetryExec - Recoverable I/O exception (java.net.SocketException) caught when processing request to {s}->https://www.eclipse.org:443
-2023-09-01 23:08:02,048 [Worker-2: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
-2023-09-01 23:08:48,413 [Worker-8: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
-2023-09-01 23:09:30,669 [Worker-2: Building] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: edu.eci.arsw:Snake-race-thread:1.0-SNAPSHOT @ C:\Users\johan\Desktop\ARSW2\LAB2\snake-race-thread-concurrency\pom.xml.
-2023-09-01 23:09:30,669 [Worker-6: Updating Maven Dependencies] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: arsw:PrimeFinder:1.0-SNAPSHOT @ C:\Users\johan\Desktop\ARSW2\LAB2\wait-notify-excercise\pom.xml.
-2023-09-01 23:09:31,447 [Worker-2: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
-2023-09-01 23:09:31,471 [Worker-2: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 4 resources
-2023-09-01 23:09:31,686 [Worker-2: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
-2023-09-01 23:09:31,687 [Worker-2: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\johan\Desktop\ARSW2\LAB2\snake-race-thread-concurrency\src\test\resources
-2023-09-01 23:09:32,209 [Worker-22: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
-2023-09-01 23:09:32,219 [Worker-22: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 4 resources
-2023-09-01 23:09:32,236 [Worker-22: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
-2023-09-01 23:09:32,238 [Worker-22: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\johan\Desktop\ARSW2\LAB2\snake-race-thread-concurrency\src\test\resources
-2023-09-01 23:09:32,497 [Worker-22: Building] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: arsw:PrimeFinder:1.0-SNAPSHOT @ C:\Users\johan\Desktop\ARSW2\LAB2\wait-notify-excercise\pom.xml.
-2023-09-01 23:09:32,618 [Worker-22: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2023-09-01 23:09:32,618 [Worker-22: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\johan\Desktop\ARSW2\LAB2\wait-notify-excercise\src\main\resources
-2023-09-01 23:09:32,621 [Worker-22: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2023-09-01 23:09:32,622 [Worker-22: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\johan\Desktop\ARSW2\LAB2\wait-notify-excercise\src\test\resources
-2023-09-01 23:09:33,023 [Worker-10: Updating Maven Dependencies] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: arsw:PrimeFinder:1.0-SNAPSHOT @ C:\Users\johan\Desktop\ARSW2\LAB2\wait-notify-excercise\pom.xml.
-2023-09-01 23:09:33,688 [Worker-11: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2023-09-01 23:09:33,688 [Worker-11: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\johan\Desktop\ARSW2\LAB2\wait-notify-excercise\src\main\resources
-2023-09-01 23:09:33,692 [Worker-11: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2023-09-01 23:09:33,692 [Worker-11: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\johan\Desktop\ARSW2\LAB2\wait-notify-excercise\src\test\resources
-2023-09-01 23:10:23,847 [Worker-11: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2023-09-01 23:10:23,847 [Worker-11: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\johan\Desktop\ARSW2\LAB2\wait-notify-excercise\src\main\resources
-2023-09-01 23:10:23,849 [Worker-11: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2023-09-01 23:10:23,849 [Worker-11: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\johan\Desktop\ARSW2\LAB2\wait-notify-excercise\src\test\resources
-2023-09-01 23:11:00,531 [Worker-14: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2023-09-01 23:11:00,531 [Worker-14: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\johan\Desktop\ARSW2\LAB2\wait-notify-excercise\src\main\resources
-2023-09-01 23:11:00,533 [Worker-14: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2023-09-01 23:11:00,533 [Worker-14: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\johan\Desktop\ARSW2\LAB2\wait-notify-excercise\src\test\resources
-2023-09-01 23:11:36,664 [Worker-9: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2023-09-01 23:11:36,664 [Worker-9: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\johan\Desktop\ARSW2\LAB2\wait-notify-excercise\src\main\resources
-2023-09-01 23:11:36,666 [Worker-9: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2023-09-01 23:11:36,666 [Worker-9: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\johan\Desktop\ARSW2\LAB2\wait-notify-excercise\src\test\resources
-2023-09-01 23:12:20,633 [Worker-23: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2023-09-01 23:12:20,633 [Worker-23: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\johan\Desktop\ARSW2\LAB2\wait-notify-excercise\src\main\resources
-2023-09-01 23:12:20,637 [Worker-23: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2023-09-01 23:12:20,637 [Worker-23: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\johan\Desktop\ARSW2\LAB2\wait-notify-excercise\src\test\resources
-2023-09-01 23:13:19,895 [Worker-3: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2023-09-01 23:13:19,896 [Worker-3: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\johan\Desktop\ARSW2\LAB2\wait-notify-excercise\src\main\resources
+2023-09-01 23:17:58,113 [Worker-6: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2023-09-01 23:18:19,084 [Worker-6: Building] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: edu.eci.arsw:Snake-race-thread:1.0-SNAPSHOT @ C:\Users\johan\Desktop\ARSW2\LAB2\snake-race-thread-concurrency\pom.xml.
+2023-09-01 23:18:19,492 [Worker-6: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-09-01 23:18:19,498 [Worker-6: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 4 resources
+2023-09-01 23:18:19,523 [Worker-6: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-09-01 23:18:19,524 [Worker-6: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\johan\Desktop\ARSW2\LAB2\snake-race-thread-concurrency\src\test\resources
+2023-09-01 23:18:19,736 [Worker-6: Building] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: arsw:PrimeFinder:1.0-SNAPSHOT @ C:\Users\johan\Desktop\ARSW2\LAB2\wait-notify-excercise\pom.xml.
+2023-09-01 23:18:19,774 [Worker-6: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-09-01 23:18:19,775 [Worker-6: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\johan\Desktop\ARSW2\LAB2\wait-notify-excercise\src\main\resources
+2023-09-01 23:18:19,778 [Worker-6: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-09-01 23:18:19,778 [Worker-6: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\johan\Desktop\ARSW2\LAB2\wait-notify-excercise\src\test\resources
+2023-09-01 23:18:21,073 [Worker-3: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-09-01 23:18:21,080 [Worker-3: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 4 resources
+2023-09-01 23:18:21,095 [Worker-3: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-09-01 23:18:21,097 [Worker-3: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\johan\Desktop\ARSW2\LAB2\snake-race-thread-concurrency\src\test\resources
+2023-09-01 23:18:24,295 [Worker-1: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-09-01 23:18:24,297 [Worker-1: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2023-09-01 23:18:24,302 [Worker-1: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-09-01 23:18:24,304 [Worker-1: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\johan\Desktop\ARSW2\LAB2\snake-race-thread-concurrency\src\test\resources
