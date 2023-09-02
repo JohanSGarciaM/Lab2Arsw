@@ -1,0 +1,4 @@
+INDEX VERSION 1.131+C:\Users\johan\Desktop\ARSW2\LAB2\.metadata\.plugins\org.eclipse.jdt.core
+3157365235.index
+2575519467.index
+1865797976.index
