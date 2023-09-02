@@ -26,6 +26,7 @@ public class Snake extends Observable implements Runnable {
     private boolean isSelected = false;
     private int growing = 0;
     public boolean goal = false;
+    public boolean paused = true;
 
     public Snake(int idt, Cell head, int direction) {
         this.idt = idt;
@@ -45,10 +46,17 @@ public class Snake extends Observable implements Runnable {
         growing = INIT_SIZE - 1;
     }
 
-    @Override
     public void run() {
         while (!snakeEnd) {
-            
+            synchronized(this) {
+            	while(paused) {
+            		try {
+            			this.wait();
+            		}catch(InterruptedException e) {
+            			throw new RuntimeException(e);
+            		}
+            	}
+            }
             snakeCalc();
 
             //NOTIFY CHANGES TO GUI
@@ -57,9 +65,9 @@ public class Snake extends Observable implements Runnable {
 
             try {
                 if (hasTurbo == true) {
-                    Thread.sleep(500 / 3);
+                    Thread.sleep(300 / 3);
                 } else {
-                    Thread.sleep(500);
+                    Thread.sleep(300);
                 }
             } catch (InterruptedException e) {
                 e.printStackTrace();
@@ -150,37 +158,47 @@ public class Snake extends Observable implements Runnable {
             direction = tmp;
         }
     }
+    
+    
+    //Sincronización de las celdas objeto para evitar colisión
+    
 
     private void checkIfTurboBoost(Cell newCell) {
         if (Board.gameboard[newCell.getX()][newCell.getY()].isTurbo_boost()) {
             // get turbo_boost
-            for (int i = 0; i != Board.NR_TURBO_BOOSTS; i++) {
-                if (Board.turbo_boosts[i] == newCell) {
-                    Board.turbo_boosts[i].setTurbo_boost(false);
-                    Board.turbo_boosts[i] = new Cell(-5, -5);
-                    hasTurbo = true;
-                }
-
-            }
-            System.out.println("[" + idt + "] " + "GETTING TURBO BOOST "
-                    + newCell.toString());
+        	synchronized(newCell) {
+	            for (int i = 0; i != Board.NR_TURBO_BOOSTS; i++) {
+	                if (Board.turbo_boosts[i] == newCell) {
+	                    Board.turbo_boosts[i].setTurbo_boost(false);
+	                    Board.turbo_boosts[i] = new Cell(-5, -5);
+	                    hasTurbo = true;
+	                }
+	
+	            }
+	            System.out.println("[" + idt + "] " + "GETTING TURBO BOOST "
+	                    + newCell.toString());
+        	}
         }
     }
+    
+
 
     private void checkIfJumpPad(Cell newCell) {
 
         if (Board.gameboard[newCell.getX()][newCell.getY()].isJump_pad()) {
             // get jump_pad
-            for (int i = 0; i != Board.NR_JUMP_PADS; i++) {
-                if (Board.jump_pads[i] == newCell) {
-                    Board.jump_pads[i].setJump_pad(false);
-                    Board.jump_pads[i] = new Cell(-5, -5);
-                    this.jumps++;
-                }
-
-            }
-            System.out.println("[" + idt + "] " + "GETTING JUMP PAD "
-                    + newCell.toString());
+        	synchronized(newCell) {
+	            for (int i = 0; i != Board.NR_JUMP_PADS; i++) {
+	                if (Board.jump_pads[i] == newCell) {
+	                    Board.jump_pads[i].setJump_pad(false);
+	                    Board.jump_pads[i] = new Cell(-5, -5);
+	                    this.jumps++;
+	                }
+	
+	            }
+	            System.out.println("[" + idt + "] " + "GETTING JUMP PAD "
+	                    + newCell.toString());
+        	}
         }
     }
 
@@ -189,27 +207,29 @@ public class Snake extends Observable implements Runnable {
 
         if (Board.gameboard[newCell.getX()][newCell.getY()].isFood()) {
             // eat food
-            growing += 3;
-            int x = random.nextInt(GridSize.GRID_HEIGHT);
-            int y = random.nextInt(GridSize.GRID_WIDTH);
-
-            System.out.println("[" + idt + "] " + "EATING "
-                    + newCell.toString());
-
-            for (int i = 0; i != Board.NR_FOOD; i++) {
-                if (Board.food[i].getX() == newCell.getX()
-                        && Board.food[i].getY() == newCell.getY()) {
-                    Board.gameboard[Board.food[i].getX()][Board.food[i].getY()]
-                            .setFood(false);
-
-                    while (Board.gameboard[x][y].hasElements()) {
-                        x = random.nextInt(GridSize.GRID_HEIGHT);
-                        y = random.nextInt(GridSize.GRID_WIDTH);
-                    }
-                    Board.food[i] = new Cell(x, y);
-                    Board.gameboard[x][y].setFood(true);
-                }
-            }
+	        synchronized(newCell) {
+	            growing += 3;
+	            int x = random.nextInt(GridSize.GRID_HEIGHT);
+	            int y = random.nextInt(GridSize.GRID_WIDTH);
+	
+	            System.out.println("[" + idt + "] " + "EATING "
+	                    + newCell.toString());
+	
+	            for (int i = 0; i != Board.NR_FOOD; i++) {
+	                if (Board.food[i].getX() == newCell.getX()
+	                        && Board.food[i].getY() == newCell.getY()) {
+	                    Board.gameboard[Board.food[i].getX()][Board.food[i].getY()]
+	                            .setFood(false);
+	
+	                    while (Board.gameboard[x][y].hasElements()) {
+	                        x = random.nextInt(GridSize.GRID_HEIGHT);
+	                        y = random.nextInt(GridSize.GRID_WIDTH);
+	                    }
+	                    Board.food[i] = new Cell(x, y);
+	                    Board.gameboard[x][y].setFood(true);
+	                }
+	            }
+	        }
         }
 
     }
@@ -342,5 +362,21 @@ public class Snake extends Observable implements Runnable {
     public int getIdt() {
         return idt;
     }
+    
+    public int getSnakeBody() {
+    	return snakeBody.size();
+    }
+    
+    public boolean getSnakeEnd() {
+    	return snakeEnd;
+    }
 
+    public void stopThread() throws InterruptedException{
+    	this.paused = true;
+    }
+    
+    synchronized void restartThread() {
+    	paused = false;
+    	notify();
+    }
 }
